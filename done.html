@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="loadCardInfo()">
+    <div class="fullpage">
+        <div class="container">
+            <div class="images">
+                <img src="images/bg-main-desktop.png" alt="" class="main-image">
+                <div class="overlay-images">
+                    <img src="images/bg-card-front.png" alt="" class="overlay-image">
+                    <img src="images/bg-card-back.png" alt="" class="overlay-image">
+                    <div class="small-icon"></div>
+                    <div class="small-icon"></div>
+                    <p id="reflect-ccn" class="credit-number"></p>
+                    <p id="reflect-name" class="cardholder-name"></p>
+                    <p id="reflect-MM" class="expiration-date"></p>
+                    <p id="slash">/</p>
+                    <p id="reflect-YY" class="expiration-date"></p>
+                    <p id="reflect-Cvc" class="code"></p>
+                </div>
+            </div>
+        </div>
+        <div class="done">
+            <img src="images/icon-complete.svg" alt="">
+            <h1>THANK YOU!</h1>
+            <h4>We've added your card details</h4>
+            <a href="index.html"><button>Continue</button></a>
+
+        </div>
+    </div>
+</body>
+</html>

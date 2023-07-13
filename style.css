@@ -1,0 +1,177 @@
+@import url(https://fonts.google.com/specimen/Space+Grotesk);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.fullpage {
+    display: flex;
+    gap: 500px;
+}
+
+
+.overlay-images {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.overlay-image:nth-child(2) {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.overlay-image {
+    display: block;
+}
+
+.small-icon {
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.small-icon:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 30px;
+    background-color: white;
+}
+
+.small-icon:nth-child(4) {
+    top: 45px;
+    width: 20px;
+    height: 20px;
+    left: 100px;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+p {
+    color: white;
+}
+
+.credit-number {
+    font-size: 38px;
+    position: absolute;
+    top: 125px;
+    left: 25px;
+    text-align: left;
+}
+
+.cardholder-name {
+    font-size: 22px;
+    position: absolute;
+    top: 190px;
+    left: 30px;
+    width: 185px;
+    text-align: left;
+}
+
+#reflect-MM {
+    font-size: 22px;
+    position: absolute;
+    top: 190px;
+    right: 140px;
+    width: 60px;
+    text-align: left;
+}
+
+#slash {
+    font-size: 22px;
+    position: absolute;
+    top: 190px;
+    right: 140px;
+    width: 60px;
+    text-align: center;
+}
+
+#reflect-YY {
+    font-size: 22px;
+    position: absolute;
+    top: 190px;
+    right: 140px;
+    width: 60px;
+    text-align: right;
+}
+
+.code {
+    font-size: 22px;
+    position: absolute;
+    left: 450px;
+    bottom: 110px;
+}
+
+
+
+.form-container {
+    display: flex;
+    margin-top: 300px;
+    width: 500px;
+    transform: scale(1.4, 1.4);
+}
+
+
+label {
+    font-weight: lighter;
+    width: 100px;
+    font-size: 12px;
+}
+
+input {
+    outline: none;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #000;
+    border: none;
+}
+
+.exp-date {
+    width: 50px;
+}
+
+#cvc {
+    margin-left: 20px;
+}
+
+button {
+    padding: 15px;
+    width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.errors {
+    font-size: 12px;
+    color: hsl(0, 100%, 66%);
+}
+
+
+.done {
+    
+    transform: translate(-30%,-10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

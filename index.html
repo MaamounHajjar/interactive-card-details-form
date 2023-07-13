@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="fullpage">
+        <div class="container">
+            <div class="images">
+                <img src="images/bg-main-desktop.png" alt="" class="main-image">
+                <div class="overlay-images">
+                    <img src="images/bg-card-front.png" alt="" class="overlay-image">
+                    <img src="images/bg-card-back.png" alt="" class="overlay-image">
+                    <div class="small-icon"></div>
+                    <div class="small-icon"></div>
+                    <p id="reflect-ccn" class="credit-number">0000 0000 0000 0000</p>
+                    <p id="reflect-name" class="cardholder-name">Jane Appleseed</p>
+                    <p id="reflect-MM" class="expiration-date">00</p>
+                    <p id="slash">/</p>
+                    <p id="reflect-YY" class="expiration-date">00</p>
+                    <p id="reflect-Cvc" class="code">000</p>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="done.html" onsubmit="return verify()" >
+                <div class="form-group">
+                    <label for="cardholder-name">CARDHOLDER NAME</label> <br>
+                    <input type="text" id="name" placeholder="e.g. Jane Appleseed" oninput="reflectName()"> <br> <br>
+                </div>
+                <div class="form-group">
+                    <label for="creditcard-number">CARD NUMBER</label> <br>
+                    <input type="text" id="ccn" placeholder="e.g. 1234 5678 9123 0000" oninput="reflectCcn()">
+                    <p type="text" class="errors" id="ccn-error"></p>  <br>
+        
+                </div>
+                <div class="form-group">
+                    <label>EXP. Date (MM/YY) <span style="padding-left: 50px;">CVC</span></label> <br>
+                    <input type="text" id="MM" class="exp-date" placeholder="MM" oninput="reflectMM()">
+                    <input type="text" id="YY" class="exp-date" placeholder="YY" oninput="reflectYY()">
+                    <input type="text" id="Cvc" placeholder="e.g. 123" oninput="reflectCvc()"> 
+                </div>
+                <p type="text" class="errors" id="info-error"></p><br>
+                <button type="submit">Confirm</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
